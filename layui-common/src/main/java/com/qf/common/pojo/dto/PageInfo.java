@@ -1,16 +1,15 @@
 package com.qf.common.pojo.dto;
 
 public class PageInfo {
-
     private int page;
     private int limit;
 
-    public int getAge() {
+    public int getPage() {
         return page;
     }
 
-    public void setAge(int age) {
-        this.page = age;
+    public void setPage(int page) {
+        this.page = page;
     }
 
     public int getLimit() {

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>添加会员-后台管理系统-Admin 1.0</title>
+    <title>用户资料编辑-后台管理系统-Admin 1.0</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -20,152 +20,118 @@
 
 <body>
 <div class="weadmin-body">
-    <form class="layui-form">
+    <form class="layui-form" id="myform">
         <div class="layui-form-item">
-            <label for="L_username" class="layui-form-label">
-                <span class="we-red">*</span>登录名
-            </label>
-            <div class="layui-input-inline">
-                <input type="text" id="L_username" name="username" lay-verify="required|nikename" autocomplete="off" class="layui-input">
-            </div>
-            <div class="layui-form-mid layui-word-aux">
-                请设置至少5个字符，将会成为您唯一的登录名
+            <label class="layui-form-label">昵称</label>
+            <div class="layui-input-block">
+                <input type="text" name="nickname" required  lay-verify="required" autocomplete="off" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
-            <label for="L_sex" class="layui-form-label">性别</label>
-            <div class="layui-input-block" id="L_sex">
+            <label class="layui-form-label">手机号</label>
+            <div class="layui-input-block">
+                <input type="text" name="mob" required lay-verify="required|phone" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">地址</label>
+            <div class="layui-input-block">
+                <input type="text" name="address" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">订单编号</label>
+            <div class="layui-input-block">
+                <input type="text" name="onumber" required lay-verify="required|onumber" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">注册时间</label>
+            <div class="layui-input-block">
+                <input type="text" name="joindate" id="joindate" placeholder="yyyy-MM-dd" required lay-verify="required|date" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item" >
+            <label class="layui-form-label">会员状态</label>
+            <div class="layui-input-block">
+                <input type="checkbox" name="status" lay-skin="switch" id="status" lay-text="激活|注销" lay-filter="myswitch" >
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">性别</label>
+            <div class="layui-input-block">
                 <input type="radio" name="sex" value="男" title="男" checked>
-                <input type="radio" name="sex" value="女" title="女">
-                <input type="radio" name="sex" value="未知" title="未知">
-            </div>
-        </div>
-
-        <div class="layui-form-item">
-            <label for="L_email" class="layui-form-label">
-                <span class="we-red">*</span>手机
-            </label>
-            <div class="layui-input-inline">
-                <input type="text" id="L_phone" name="phone" lay-verify="required|phone" autocomplete="" class="layui-input">
+                <input type="radio" name="sex" value="女" title="女" >
             </div>
         </div>
         <div class="layui-form-item">
-            <label for="L_email" class="layui-form-label">
-                <span class="we-red">*</span>邮箱
-            </label>
-            <div class="layui-input-inline">
-                <input type="text" id="L_email" name="email" autocomplete="off" class="layui-input">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-filter="add" lay-submit="">提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
             </div>
-
-        </div>
-        <div class="layui-form-item">
-            <label for="L_pass" class="layui-form-label">
-                <span class="we-red">*</span>密码
-            </label>
-            <div class="layui-input-inline">
-                <input type="password" id="L_pass" name="pass" lay-verify="required|pass" autocomplete="off" class="layui-input">
-            </div>
-            <div class="layui-form-mid layui-word-aux">
-                6到16个字符
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label for="L_repass" class="layui-form-label">
-                <span class="we-red">*</span>确认密码
-            </label>
-            <div class="layui-input-inline">
-                <input type="password" id="L_repass" name="repass" lay-verify="required|repass" autocomplete="off" class="layui-input">
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label for="L_repass" class="layui-form-label">
-            </label>
-            <button class="layui-btn" lay-filter="add" lay-submit="">确定</button>
         </div>
     </form>
 </div>
-<script>
+<script type="text/javascript">
     layui.extend({
         admin: '{/}../../static/js/admin'
     });
-    layui.use(['form', 'jquery','util','admin', 'layer'], function() {
+    layui.use(['form', 'jquery', 'admin','layer','laydate'], function() {
         var form = layui.form,
             $ = layui.jquery,
-            util = layui.util,
             admin = layui.admin,
+            laydate = layui.laydate,
             layer = layui.layer;
-
-        //自定义验证规则
+        laydate.render({
+            elem: '#joindate'
+        });
+        /*序列化表单*/
+        $.fn.serializeObject = function()
+        {
+            var o = {};
+            var a = this.serializeArray();
+            $.each(a, function() {
+                if (o[this.name]) {
+                    if (!o[this.name].push) {
+                        o[this.name] = [o[this.name]];
+                    }
+                    o[this.name].push(this.value || '');
+                } else {
+                    o[this.name] = this.value || '';
+                }
+            });
+            return o;
+        };
+        //监听指定开关
+        form.on('switch(myswitch)', function(data){
+            console.log(data.value);
+        });
+        /*自定义验证规则*/
         form.verify({
-            nikename: function(value) {
-                if(value.length < 5) {
-                    return '昵称至少得5个字符啊';
-                }
-            },
-            pass: [/(.+){6,12}$/, '密码必须6到12位'],
-            repass: function(value) {
-                if($('#L_pass').val() != $('#L_repass').val()) {
-                    return '两次密码不一致';
-                }
-            }
+            onumber: [
+                /^[\S]{6,6}$/
+                ,'订单编号必须为6位'
+            ]
         });
-        //失去焦点时判断值为空不验证，一旦填写必须验证
-        $('input[name="email"]').blur(function(){
-            //这里是失去焦点时的事件
-            if($('input[name="email"]').val()){
-                $('input[name="email"]').attr('lay-verify','email');
-            }else{
-                $('input[name="email"]').removeAttr('lay-verify');
-            }
-        });
-
         //监听提交
-        form.on('submit(add)', function(data) {
-            //console.log(data.field);
-            var f = data.field;
-            //console.log(f.username);
-            //console.log(f.sex);
-            //var sex = $('input:radio[name="sex"]:checked').val();
-
-            //发异步，把数据提交给php
+        form.on('submit(add)', function (data) {
+            $.ajax({
+                type:'POST',
+                url:'../../users/add',
+                data:JSON.stringify($("#myform").serializeObject()),
+                contentType:'application/json'
+            });
             layer.alert("增加成功", {
                 icon: 6
-            }, function() {
-                //获取提交成功的时间
-                var time = new Date();
-                var timeNow = util.toDateString(time);
+            }, function () {
                 // 获得frame索引
                 var index = parent.layer.getFrameIndex(window.name);
-
-                var _len = parent.$('#memberList tr').length;
-                alert(_len);
-                parent.$('#memberList').append(
-                    '<tr data-id="' + _len + '">' +
-                    '<td>'+
-                    '<div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id="' + _len + '"><i class="layui-icon">&#xe605;</i></div>'+
-                    '</td>'+
-                    '<td>' + _len + '</td>'+
-                    '<td>'+f.username+'</td>'+
-                    '<td>'+f.sex+'</td>'+
-                    '<td>'+f.phone+'</td>'+
-                    '<td>'+f.email+'</td>'+
-                    '<td>北京市西城区</td>'+
-                    '<td>'+timeNow+'</td>'+
-                    '<td class="td-status"><span class="layui-btn layui-btn-normal layui-btn-xs">已启用</span></td>'+
-                    '<td class="td-manage">'+
-                    '<a onclick="member_stop(this,\'10001\')" href="javascript:;" title="启用"><i class="layui-icon">&#xe601;</i></a>'+
-                    '<a title="编辑" onclick="WeAdminShow(\'编辑\',\'./edit.html\',600,400)" href="javascript:;"><i class="layui-icon">&#xe642;</i></a>'+
-                    '<a onclick="WeAdminShow(\'修改密码\',\'./password.html\',600,400)" title="修改密码" href="javascript:;"><i class="layui-icon">&#xe631;</i></a>'+
-                    '<a title="删除" onclick="member_del(this,\'要删除的id\')" href="javascript:;"><i class="layui-icon">&#xe640;</i></a>'+
-                    '</td>'+
-                    '</tr>'
-                );
                 //关闭当前frame
                 parent.layer.close(index);
+                parent.location.reload();
             });
             return false;
         });
-
     });
 </script>
 </body>

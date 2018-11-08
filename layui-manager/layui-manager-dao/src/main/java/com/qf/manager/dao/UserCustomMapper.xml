@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qf.manager.dao.UserCustomMapper" >
+
+    <sql id="Base_Column_List" >
+        u.id, u.nickname, u.sex, u.mob, u.address, u.joindate, u.onumber, u.status,g.gname
+    </sql>
+
+    <sql id="Where_Clause">
+        <where>
+            u.status!=3
+            <if test="query != null and query.search != null and query.search != '' ">
+                and CONCAT(<include refid="Base_Column_List" />) LIKE BINARY '%${query.search}%'
+            </if>
+        </where>
+        ORDER BY u.id
+    </sql>
+
+    <select id="countUsers" resultType="_long">
+        select count(1)
+        from user u LEFT JOIN orders o ON u.onumber=o.ordernumber LEFT JOIN goods g ON o.gnumber=g.goodsnumber
+        <include refid="Where_Clause" />
+    </select>
+
+    <select id="listUsersByPageAndSearch" resultType="com.qf.manager.pojo.vo.UserCustom">
+        select
+        <include refid="Base_Column_List" />
+        from user u LEFT JOIN orders o ON u.onumber=o.ordernumber LEFT JOIN goods g ON o.gnumber=g.goodsnumber
+        <include refid="Where_Clause" />
+        limit #{pageInfo.offset},#{pageInfo.limit}
+    </select>
+
+    <insert id="add" parameterType="java.util.Map">
+        INSERT INTO user(nickname,sex,mob,address,joindate,onumber,status) VALUES(#{nickname},#{sex},#{mob},#{address},#{joindate},#{onumber},#{status})
+    </insert>
+
+    <update id="edit" parameterType="java.util.Map">
+        UPDATE user set nickname=#{nickname},sex=#{sex},mob=#{mob},address=#{address},joindate=#{joindate},status=#{status} WHERE id = #{id}
+    </update>
+</mapper>

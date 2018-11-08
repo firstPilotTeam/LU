@@ -2,8 +2,9 @@ package com.qf.manager.dao;
 
 import com.qf.manager.pojo.po.User;
 import com.qf.manager.pojo.po.UserExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface UserMapper {
     int countByExample(UserExample example);
