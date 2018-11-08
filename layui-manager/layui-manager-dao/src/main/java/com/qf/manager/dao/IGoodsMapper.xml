@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qf.manager.dao.IGoodsMapper" >
+
+    <select id="selectAll" resultType="com.qf.manager.pojo.po.Goods" >
+        SELECT  * from goods
+
+    </select>
+
+    <select id="countGoods" resultType="_Long">
+        SELECT count(1) from goods
+    </select>
+
+
+
+    <insert id="saveGoods" parameterType="com.qf.manager.pojo.po.Goods" >
+        insert into goods (id, goodsnumber, gname,
+        features, Shelftime, snumber,
+        stock, state, ishot
+        )
+        values (#{id,jdbcType=INTEGER}, #{goodsnumber,jdbcType=VARCHAR}, #{gname,jdbcType=VARCHAR},
+        #{features,jdbcType=VARCHAR}, #{shelftime,jdbcType=DATE}, #{snumber,jdbcType=VARCHAR},
+        #{stock,jdbcType=INTEGER}, #{state,jdbcType=VARCHAR}, #{ishot,jdbcType=VARCHAR}
+        )
+   </insert>
+
+
+
+
+
+</mapper>

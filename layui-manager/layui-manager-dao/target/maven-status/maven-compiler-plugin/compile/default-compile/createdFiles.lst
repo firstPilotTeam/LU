@@ -1,0 +1,5 @@
+com\qf\manager\dao\SortMapper.class
+com\qf\manager\dao\GoodsMapper.class
+com\qf\manager\dao\UserMapper.class
+com\qf\manager\dao\OrdersMapper.class
+com\qf\manager\dao\IGoodsMapper.class

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/layui-common/layui-common.iml" filepath="$PROJECT_DIR$/layui-common/layui-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layui-manager/layui-manager.iml" filepath="$PROJECT_DIR$/layui-manager/layui-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layui-manager/layui-manager-dao/layui-manager-dao.iml" filepath="$PROJECT_DIR$/layui-manager/layui-manager-dao/layui-manager-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layui-manager/layui-manager-interface/layui-manager-interface.iml" filepath="$PROJECT_DIR$/layui-manager/layui-manager-interface/layui-manager-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layui-manager/layui-manager-pojo/layui-manager-pojo.iml" filepath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/layui-manager-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layui-manager/layui-manager-service/layui-manager-service.iml" filepath="$PROJECT_DIR$/layui-manager/layui-manager-service/layui-manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layui-manager/layui-manager-web/layui-manager-web.iml" filepath="$PROJECT_DIR$/layui-manager/layui-manager-web/layui-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layui-parent/layui-parent.iml" filepath="$PROJECT_DIR$/layui-parent/layui-parent.iml" />
+    </modules>
+  </component>
+</project>
