@@ -45,7 +45,7 @@
         //监听提交
         form.on('submit(login)', function(data){
             $.ajax({
-                url:'../users',
+                url:'../user',
                 data:data.field,
                 dataType:'text',
                 type:'get',
