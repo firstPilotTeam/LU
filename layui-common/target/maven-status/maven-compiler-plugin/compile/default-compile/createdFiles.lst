@@ -1,2 +1,2 @@
-com\qf\common\pojo\dto\GoodsResult.class
-com\qf\common\pojo\dto\PageInfo.class
+com\qf\common\pojo\dto\dto\ItemResult.class
+com\qf\common\pojo\dto\dto\PageInfo.class
