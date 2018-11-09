@@ -305,13 +305,24 @@
 
     <!--当前工程的构建信息-->
     <build>
-
-
-
-
-
-
-
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
         <!--所用到的插件-->
         <plugins>
             <!-- 非类路径下资源文件编译插件 -->
