@@ -1,5 +1,4 @@
-com\qf\manager\dao\SortMapper.class
-com\qf\manager\dao\GoodsMapper.class
-com\qf\manager\dao\UserMapper.class
-com\qf\manager\dao\OrdersMapper.class
-com\qf\manager\dao\IGoodsMapper.class
+com\qf\manager\dao\TbItemCatMapper.class
+com\qf\manager\dao\TbItemCustomMapper.class
+com\qf\manager\dao\TbItemMapper.class
+com\qf\manager\dao\TbItemDescMapper.class
