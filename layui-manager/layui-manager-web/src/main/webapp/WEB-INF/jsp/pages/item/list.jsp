@@ -57,7 +57,7 @@
         </form>
     </div>
     <div class="weadmin-block demoTable">
-        <button class="layui-btn layui-btn-danger" data-type="getCheckData"><i class="layui-icon">&#xe640;</i>批量删除</button>
+       <%-- <button class="layui-btn layui-btn-danger" data-type="getCheckData"><i class="layui-icon">&#xe640;</i>批量删除</button>--%>
         <%--<button class="layui-btn" onclick="WeAdminShow('添加商品','./add',600,500)"><i class="layui-icon">&#xe61f;</i>添加</button>--%>
         <button id="addBtn" class="layui-btn" data-type="reload">新增</button>
     </div>
@@ -149,9 +149,9 @@
     <table class="layui-hide" id="articleList" lay-filter="useruv"></table>
     <!--为表格添件按钮-->
     <script type="text/html" id="barDemo">
-        <a class="layui-btn layui-btn-primary layui-btn-mini" lay-event="detail">查看</a>
-        <a class="layui-btn layui-btn-mini" layui-event="edit" >编辑</a>
-        <a class="layui-btn layui-btn-danger layui-btn-mini" layui-event="del">删除</a>
+        <%--<a class="layui-btn layui-btn-primary layui-btn-mini" lay-event="detail">查看</a>--%>
+        <a class="layui-btn layui-btn-mini" lay-event="edit" >编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
     </script>
 
 
@@ -199,7 +199,23 @@
                     {field: 'goodsnumber', title: '商品编号',width:80},
                     {field: 'gname', title: '商品名称',width:80},
                     {field: 'features', title: '商品卖点',width:80},
-                    {field: 'Shelftime', title: '上架时间',width:120},
+                    {field: 'shelftime', title: '上架时间',width:120,templet:function (d) {
+                           /* alert(d.shelftime)*/
+                           var  cellval=d.shelftime
+                        var dateVal = cellval + "";
+                            if (cellval != null) {
+                                var date = new Date(parseInt(dateVal.replace("/Date(", "").replace(")/", ""), 10));
+                                var month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
+                                var currentDate = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+
+                                var hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
+                                var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+                                var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+
+                                return date.getFullYear() + "-" + month + "-" + currentDate;
+                            }
+
+                    }},
                     {field: 'snumber', title: '分类编号',width:80},
                     {field: 'stock', title: '库存',width:80},
                     {field: 'state', title: '商品状态',width:80},
@@ -296,25 +312,43 @@
 
             //监听工具条
             table.on('tool(useruv)',function(obj){
-                    var data =  obj.data;
+
+                    var data =  obj.data;//获得当前行数据
                     if(obj.event==='detail'){
                         layer.msg('ID:'+data.id+' 的查看操作');
                     }else if(obj.event==='del'){
-                        layer.confirm('真的删除么',function(index){
+                        layer.confirm('真的删除么，删除后不能恢复',{title:"删除确认"},function(index){
+                            layer.close(index);
                             console.log(data);
                             //使用ajax
                             $.ajax({
-                                url:"../../items",
+                                url:"../../del",
                                 type:"POST",
-                                data:{"uvid":data,"menthodname":"deleteuv","aid":data.aid},
+                                data:{"id":data.id},
                                 dataType:"json",
-                                success:function (data) {
-                                    if(data.state==1){
+                                success:function (result) {
+                                    if(result.code==0){
                                         //删除该行
                                         obj.del();
                                         //关闭弹窗
                                         layer.close(index);
-                                        layer.msg("删除成功",{icon:6});
+                                       // layer.msg("删除成功",{icon:6});
+                                        //layer.closeAll();
+                                        //parent.window.location.reload();
+
+
+                                        layer.msg(result.msg, {
+                                            icon: 6,
+                                            time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                                        }, function(){
+                                            //do something
+                                            //两秒关闭页面之后要做的事情
+                                            //刷新父页面
+                                            parent.window.location.reload();
+                                        });
+
+
+
                                     }else{
                                         layer.msg("删除失败",{icon:5});
                                     }
@@ -323,15 +357,59 @@
                             });
                         });
                     }else if(obj.event==='edit'){
-                        layer.prompt({
-                            formType: 2,
+
+
+                        layer.open({
+                            type: 2,
+                            area: ['400px', '500px'],
+                            shade: [0.8, '#393D49'],
+                            anim: 4,
+                            content: '../../edit' //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+
+                            ,success:function(layero, index){
+                                //这里一般是发送修改的Ajax请求
+                                //这里的内容就是点击“确定”之后要提交的
+                               /* alert(layero);//得到value*/
+                              /*  EidtUv(data,value,index,obj);*/
+
+                                //刷新整个页面
+                                //   parent.window.location.reload();
+
+                            var body = layer.getChildFrame('body', index);
+                            var iframeWin = window[layero.find('iframe')[0]['name']];
+                            console.log(body.html())
+                           /* body.find('input').val('Hi，我是从父页来的')*/
+
+                                body.find('#ni').val(data.id);
+                                body.find('#go').val(data.goodsnumber);
+                                body.find('#gn').val(data.gname);
+                                body.find('#fe').val(data.features);
+                                body.find('#sh').val(data.shelftime);
+                                body.find('#sn').val(data.snumber);
+                                body.find('#st').val(data.stock);
+                                body.find('#sta').val(data.state);
+                                body.find('#is').val(data.ishot);
+
+
+                            }
+                    })
+
+                       /* layer.prompt({
+                            formType: 2,//输出框类型，2表示多行文本
                             title: '修改ID为[‘+data.id+’]的访问量',
-                            value: data.uv
+                            value: "nihao",//初始的值
+                            area: ['800px', '350px'] //自定义文本域宽高
                         },function(value,index){
                             //这里一般是发送修改的Ajax请求
+                            //这里的内容就是点击“确定”之后要提交的
+                            alert(value);//得到value
                             EidtUv(data,value,index,obj);
 
-                        });
+                            //刷新整个页面
+                         //   parent.window.location.reload();
+
+
+                        });*/
                     }
 
 
@@ -346,13 +424,14 @@
             //编辑的方法
             function  EidtUv(data,value,index,obj) {
                 $.ajax({
-                    url: "../../items",
+                    url: "../../edit2",
                     type: "POST",
-                    data:{"uvid":data.id,"memthodname":"edituv","aid":data.aid,"uv":value},
-                    dataType: "json",
-                    success: function(data){
+                    data:"id="+data.id,
+                    //data:{"uvid":data.id,"memthodname":"edituv","aid":data.aid,"uv":value},
+                    //dataType: "json",
+                    success: function(result){
 
-                        if(data.state==1){
+                        if(result.code==0){
                             //关闭弹框
                             layer.close(index);
                             //同步更新表格和缓存对应的值
@@ -363,6 +442,9 @@
                         }else{
                             layer.msg("修改失败", {icon: 5});
                         }
+
+
+
                     }
 
                 });
@@ -383,6 +465,9 @@
 
 
             });
+
+            //模糊查询
+
 
 
         });

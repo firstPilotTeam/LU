@@ -50,7 +50,7 @@ public class ManagerAction {
     //新增：要新建一个页面add.jsp(与list.jsp在一个目录下)
     @RequestMapping(value="/add", method=RequestMethod.GET)
     public String add(){
-        return "pages/items/add";
+        return "pages/item/add";
     }
 
     @RequestMapping(value="/add",method=RequestMethod.POST)
@@ -64,5 +64,47 @@ public class ManagerAction {
         return result;
     }
 
-    //manager/add
+    //删除
+    @ResponseBody
+    @RequestMapping("/del")
+    public GoodsResult<Object> delete(Integer id){
+        GoodsResult<Object> result = new GoodsResult<>();
+        result.setCode(0);
+        result.setMsg("删除成功");
+        ser.delGoods(id);
+        return result;
+    }
+
+
+    //编辑
+
+    //数据回显
+    @RequestMapping(value="/edit", method=RequestMethod.GET)
+    public String edit(){
+        System.out.println("方法调用");
+        return "pages/item/edit";
+    }
+   /* //从后台拿数据放到页面
+    @RequestMapping("/edit2")
+    @ResponseBody
+    public GoodsResult<Goods> edit2(Integer id){
+        List<Goods> goods = ser.editback(id);
+        GoodsResult<Goods> result = new GoodsResult<>();
+        result.setData(goods);
+        result.setCode(0);
+        System.out.println(result.getData().toString());
+        return result;
+    }*/
+
+    //提交编辑之后的数据
+    @RequestMapping(value="/edit3" ,method=RequestMethod.POST)
+    @ResponseBody
+    public GoodsResult<Goods> edit(Goods goods){
+        GoodsResult<Goods> result = new GoodsResult<Goods>();
+        result.setMsg("编辑成功");
+        result.setCode(0);
+        ser.modifyGoods(goods);
+        //ser.edit();
+        return result;
+    }
 }

@@ -170,31 +170,18 @@
                     //do something
                     //两秒关闭页面之后要做的事情
                     //刷新父页面
-                    parent.window.location();
+                    parent.window.location.reload();
                 });
 
                 //alert(result.msg);
-            });
+            })
 
             //阻止表单提交,因为我们想要使用ajax提交，如果使用传统的表单提交最后控制层返回的是页面，也不能使用@ResponseBody
             return false;
         });
 
         //使用ajax去提交信息
-      /* $.post("add",data.field,function(result) {
 
-            layer.msg(result.msg, {
-                icon: 1,
-                time: 2000 //2秒关闭（如果不配置，默认是3秒）
-            }, function(){
-                //do something
-                //两秒关闭页面之后要做的事情
-                //刷新父页面
-                parent.window.location();
-            });
-
-            //alert(result.msg);
-        });*/
 
 
 
@@ -207,6 +194,9 @@
             },  pass: [/(.+){2,12}$/, '商品卖点描述最少2字，最多12位']
 
         });
+
+
+
     });
 </script>
 </body>

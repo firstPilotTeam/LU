@@ -79,4 +79,20 @@ public class GoodsServiceImpl implements GoodsService {
     public void addGoods(Goods goods) {
         mapper.saveGoods(goods);
     }
+
+    @Override
+    public void delGoods(Integer id) {
+        mapper.remove(id);
+    }
+
+    @Override
+    public List<Goods> editback(Integer id) {
+        List<Goods> goods = mapper.modifyback(id);
+        return goods;
+    }
+
+    @Override
+    public void modifyGoods(Goods goods) {
+        mapper.update(goods);
+    }
 }

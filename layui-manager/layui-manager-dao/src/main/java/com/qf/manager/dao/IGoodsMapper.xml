@@ -19,13 +19,35 @@
         stock, state, ishot
         )
         values (#{id,jdbcType=INTEGER}, #{goodsnumber,jdbcType=VARCHAR}, #{gname,jdbcType=VARCHAR},
-        #{features,jdbcType=VARCHAR}, #{shelftime,jdbcType=DATE}, #{snumber,jdbcType=VARCHAR},
+        #{features,jdbcType=VARCHAR}, #{Shelftime,jdbcType=DATE}, #{snumber,jdbcType=VARCHAR},
         #{stock,jdbcType=INTEGER}, #{state,jdbcType=VARCHAR}, #{ishot,jdbcType=VARCHAR}
         )
    </insert>
 
 
+    <delete id="remove" parameterType="java.lang.Integer">
+        DELETE FROM goods WHERE id =#{id}
+    </delete>
 
+  <!--数据回显-->
+    <select id="modify"  parameterType="java.lang.Integer">
+        SELECT * from goods where id=#{id}
+
+    </select>
+
+    <!--编辑-->
+    <select id="update" resultType="com.qf.manager.pojo.po.Goods" parameterType="com.qf.manager.pojo.po.Goods">
+        update goods set id=#{id}, goodsnumber=#{goodsnumber}, gname=#{gname},
+        features=#{features}, Shelftime=#{Shelftime}, snumber=#{snumber},
+        stock=#{stock}, state=#{state}, ishot=#{ishot}
+          
+    </select>
+
+
+    <!--模糊查询-->
+    <select id="selectByName" resultType="com.qf.manager.pojo.po.Goods" parameterType="java.lang.String">
+        SELECT * from where name like #{string}
+    </select>
 
 
 </mapper>

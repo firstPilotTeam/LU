@@ -15,4 +15,11 @@ public interface IGoodsMapper {
     public List<Goods> selectAll(@Param("pageInfo") PageInfo pageInfo, @Param("query")TbItemQuery query);
 
     void saveGoods(Goods goods);
+
+    void remove(@Param("id")Integer id);
+
+
+    List<Goods> modifyback(@Param("id") Integer id);
+
+    void update(Goods goods);
 }

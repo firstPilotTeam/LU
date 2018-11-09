@@ -14,7 +14,7 @@ public class Goods {
     private String features;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date shelftime;
+    private Date Shelftime;
 
     private String snumber;
 
@@ -37,7 +37,7 @@ public class Goods {
     }
 
     public void setGoodsnumber(String goodsnumber) {
-        this.goodsnumber = goodsnumber == null ? null : goodsnumber.trim();
+        this.goodsnumber = goodsnumber;
     }
 
     public String getGname() {
@@ -45,7 +45,7 @@ public class Goods {
     }
 
     public void setGname(String gname) {
-        this.gname = gname == null ? null : gname.trim();
+        this.gname = gname;
     }
 
     public String getFeatures() {
@@ -53,15 +53,15 @@ public class Goods {
     }
 
     public void setFeatures(String features) {
-        this.features = features == null ? null : features.trim();
+        this.features = features;
     }
 
     public Date getShelftime() {
-        return shelftime;
+        return Shelftime;
     }
 
     public void setShelftime(Date shelftime) {
-        this.shelftime = shelftime;
+        Shelftime = shelftime;
     }
 
     public String getSnumber() {
@@ -69,7 +69,7 @@ public class Goods {
     }
 
     public void setSnumber(String snumber) {
-        this.snumber = snumber == null ? null : snumber.trim();
+        this.snumber = snumber;
     }
 
     public Integer getStock() {
@@ -85,7 +85,7 @@ public class Goods {
     }
 
     public void setState(String state) {
-        this.state = state == null ? null : state.trim();
+        this.state = state;
     }
 
     public String getIshot() {
@@ -93,6 +93,6 @@ public class Goods {
     }
 
     public void setIshot(String ishot) {
-        this.ishot = ishot == null ? null : ishot.trim();
+        this.ishot = ishot;
     }
 }

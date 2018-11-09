@@ -14,4 +14,11 @@ public interface GoodsService {
     int batchGoods(List<Long> ids);
 
     void addGoods(Goods goods);
+
+
+    void delGoods(Integer id);
+
+    List<Goods> editback(Integer id);
+
+    void modifyGoods(Goods goods);
 }
