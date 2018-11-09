@@ -1,17 +1,17 @@
 package com.qf.manager.web;
 
-import com.qf.common.pojo.dto.PageInfo;
-import com.qf.common.pojo.dto.UserResult;
-import com.qf.manager.pojo.po.User;
-import com.qf.manager.pojo.vo.UserCustom;
-import com.qf.manager.pojo.vo.UserQuery;
-import com.qf.manager.service.UserService;
+
+import com.qf.common.pojo.dto.dto.ItemResult;
+import com.qf.common.pojo.dto.dto.PageInfo;
+import com.qf.manager.pojo.vo.TbItemCustom;
+import com.qf.manager.pojo.vo.Users;
+import com.qf.manager.service.ItemService;
+import com.qf.manager.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * User: DHC
@@ -22,9 +22,11 @@ import java.util.Map;
 @Controller
 public class ManagerIndexAction {
     @Autowired
-    private UserService userService;
+    private ItemService itemService;
 
-/*    @GetMapping("/{path}")
+    @Autowired
+    private UsersService usersService;
+    @GetMapping("/{path}")
     public String index1(@PathVariable String path) {
         return path;
     }
@@ -37,29 +39,40 @@ public class ManagerIndexAction {
     @GetMapping("/pages/{path1}/{path2}")
     public String index3(@PathVariable String path1, @PathVariable String path2) {
         return "pages/" + path1 + "/" + path2;
-    }*/
-
-    @ResponseBody
-    @GetMapping("/users")
-    public UserResult<UserCustom> listUserByPageAndSearch(PageInfo pageInfo, UserQuery query){
-        return userService.listUserByPageAndSearch(pageInfo,query);
     }
 
     @ResponseBody
-    @PostMapping("/users/batch")
-    public int batchUsers(@RequestParam("ids[]")List<Integer> ids){
-        return userService.batchUsers(ids);
+    @GetMapping("/items")
+    public ItemResult<TbItemCustom> listItemsByPage(PageInfo pageInfo){
+        return itemService.listItemsByPage(pageInfo);
     }
 
     @ResponseBody
-    @PostMapping("/users/add")
-    public void add(@RequestBody Map<String,Object> map){
-        userService.add(map);
+    @PostMapping("/items/batch")
+    public int batchItems(@RequestParam("ids[]") List<Long> ids){
+        return itemService.batchItems(ids);
     }
 
+    //登入验证
     @ResponseBody
-    @PostMapping("/users/edit")
-    public void edit(@RequestBody Map<String,Object> map){
-        userService.edit(map);
+    @GetMapping("/user")
+    public int users(Users users){
+
+        int data= usersService.user(users);
+        return data;
+    }
+
+    //注册校验用户名
+    @ResponseBody
+    @PostMapping("/username")
+    public int username(@RequestParam("uname") String uname){
+        return usersService.username(uname);
+    }
+
+    //注册信息
+    @ResponseBody
+    @PostMapping("/adduser")
+    public int adduser(Users users){
+        return usersService.adduser(users);
     }
 }
