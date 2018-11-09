@@ -2,42 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="716c9b53-b5ef-47ff-81d4-5bedfb075c2a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/item/edit.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-common/target/classes/com/qf/common/pojo/dto/PageInfo.class" afterPath="$PROJECT_DIR$/layui-common/target/classes/com/qf/common/pojo/dto/PageInfo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-common/target/layui-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/layui-common/target/layui-common-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-dao/target/classes/com/qf/manager/dao/IGoodsMapper.class" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-dao/target/classes/com/qf/manager/dao/IGoodsMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-dao/target/layui-manager-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-dao/target/layui-manager-dao-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-interface/target/classes/com/qf/manager/service/GoodsService.class" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-interface/target/classes/com/qf/manager/service/GoodsService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-interface/target/layui-manager-interface-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-interface/target/layui-manager-interface-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/target/classes/com/qf/manager/pojo/po/Goods.class" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/target/classes/com/qf/manager/pojo/po/Goods.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/target/layui-manager-pojo-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/target/layui-manager-pojo-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-service/target/classes/com/qf/manager/service/impl/GoodsServiceImpl.class" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-service/target/classes/com/qf/manager/service/impl/GoodsServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-service/target/layui-manager-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-service/target/layui-manager-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/classes/com/qf/manager/web/ManagerAction.class" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/classes/com/qf/manager/web/ManagerAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web.war" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/classes/com/qf/manager/web/ManagerAction.class" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/classes/com/qf/manager/web/ManagerAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/lib/layui-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/lib/layui-common-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/lib/layui-manager-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/lib/layui-manager-dao-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/lib/layui-manager-interface-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/lib/layui-manager-interface-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/lib/layui-manager-pojo-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/lib/layui-manager-pojo-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/lib/layui-manager-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/lib/layui-manager-service-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-common/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/layui-common/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/IGoodsMapper.java" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/IGoodsMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/IGoodsMapper.xml" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/IGoodsMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-dao/target/classes/com/qf/manager/dao/IGoodsMapper.xml" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-dao/target/classes/com/qf/manager/dao/IGoodsMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-dao/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-dao/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-interface/src/main/java/com/qf/manager/service/GoodsService.java" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-interface/src/main/java/com/qf/manager/service/GoodsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-interface/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-interface/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/src/main/java/com/qf/manager/pojo/po/Goods.java" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/src/main/java/com/qf/manager/pojo/po/Goods.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-service/src/main/java/com/qf/manager/service/impl/GoodsServiceImpl.java" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-service/src/main/java/com/qf/manager/service/impl/GoodsServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-service/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/java/com/qf/manager/web/ManagerAction.java" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/java/com/qf/manager/web/ManagerAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/item/add.jsp" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/item/add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/item/list.jsp" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/item/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/layui-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/layui-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-interface/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-interface/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-interface/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-interface/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/pages/item/add.jsp" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/pages/item/add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/pages/item/list.jsp" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/pages/item/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/pages/member/add.jsp" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/pages/member/add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/pages/member/edit.jsp" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/pages/member/edit.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/pages/member/list.jsp" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/pages/member/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/test.jsp" afterPath="$PROJECT_DIR$/layui-manager/layui-manager-web/target/possible-manager-web/WEB-INF/jsp/test.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/layui-common/target/" />
     <ignored path="$PROJECT_DIR$/layui-manager/layui-manager-interface/target/" />
@@ -67,103 +62,112 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/item/list.jsp">
+      <file leaf-file-name="ItemService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-interface/src/main/java/com/qf/manager/service/ItemService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="474" column="0" lean-forward="true" selection-start-line="474" selection-start-column="0" selection-end-line="474" selection-end-column="0" />
-              <folding>
-                <element signature="e#2932#6395#0#JSP" expanded="false" />
-                <element signature="e#10351#12284#0#HTML" expanded="false" />
-                <marker date="1541731199655" expanded="false" signature="16975:17043" ph="//..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/item/edit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2400">
-              <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+            <state relative-caret-position="121">
+              <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManagerAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/java/com/qf/manager/web/ManagerAction.java">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-interface/src/main/java/com/qf/manager/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="105" column="20" lean-forward="false" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
+            <state relative-caret-position="312">
+              <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoodsService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-interface/src/main/java/com/qf/manager/service/GoodsService.java">
+      <file leaf-file-name="UsersService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-interface/src/main/java/com/qf/manager/service/UsersService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="18">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IGoodsMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/IGoodsMapper.xml">
+      <file leaf-file-name="ItemServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-service/src/main/java/com/qf/manager/service/impl/ItemServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            <state relative-caret-position="112">
+              <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TbItemDescMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/TbItemDescMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="181" column="10" lean-forward="false" selection-start-line="181" selection-start-column="10" selection-end-line="181" selection-end-column="10" />
               <folding>
-                <marker date="1541731199515" expanded="true" signature="283:303" ph="SELECT * fro... goods" />
-                <marker date="1541731199515" expanded="true" signature="376:402" ph="SELECT count... goods" />
-                <marker date="1541731199515" expanded="true" signature="502:913" ph="insert into goods... " />
-                <marker date="1541731199515" expanded="true" signature="996:1029" ph="DELETE FROM " />
-                <marker date="1541731199515" expanded="true" signature="1127:1161" ph="SELECT * fro... goods" />
-                <marker date="1541731199515" expanded="true" signature="1312:1511" ph="update goods... " />
-                <marker date="1541731199515" expanded="true" signature="1669:1708" ph="SELECT * fro... where" />
+                <marker date="1541775588024" expanded="true" signature="4162:4325" ph="select , fro... " />
+                <marker date="1541775588024" expanded="true" signature="4409:4479" ph="delete from " />
+                <marker date="1541775588024" expanded="true" signature="4586:4610" ph="delete from " />
+                <marker date="1541775588024" expanded="true" signature="4794:5006" ph="insert into tb_item_desc... " />
+                <marker date="1541775588024" expanded="true" signature="6007:6040" ph="select count... tb_item_desc" />
+                <marker date="1541775588024" expanded="true" signature="6876:7113" ph="update tb_it... " />
+                <marker date="1541775588024" expanded="true" signature="7286:7464" ph="update tb_it... " />
+                <marker date="1541775588024" expanded="true" signature="7679:8060" ph="update tb_it... " />
+                <marker date="1541775588024" expanded="true" signature="8172:8384" ph="update tb_it... " />
+                <marker date="1541775588024" expanded="true" signature="8487:8647" ph="update tb_it... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IGoodsMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/IGoodsMapper.java">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/lib/layui/css/modules/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state relative-caret-position="120">
+              <caret line="182" column="13" lean-forward="false" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layui-manager-dao.iml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-dao/layui-manager-dao.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-345">
+              <caret line="81" column="28" lean-forward="false" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TbItemCatMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/TbItemCatMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1541775588003" expanded="true" signature="3797:3903" ph="select from tb_item_cat" />
+                <marker date="1541775588003" expanded="true" signature="3987:4047" ph="delete from " />
+                <marker date="1541775588003" expanded="true" signature="4153:4176" ph="delete from " />
+                <marker date="1541775588003" expanded="true" signature="4359:4718" ph="insert into tb_item_cat... " />
+                <marker date="1541775588003" expanded="true" signature="6280:6312" ph="select count... tb_item_cat" />
+                <marker date="1541775588003" expanded="true" signature="7547:7973" ph="update tb_it... " />
+                <marker date="1541775588003" expanded="true" signature="8187:8924" ph="update tb_it... " />
+                <marker date="1541775588003" expanded="true" signature="9026:9399" ph="update tb_it... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Goods.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-pojo/src/main/java/com/qf/manager/pojo/po/Goods.java">
+      <file leaf-file-name="spring-dao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/resources/spring/spring-dao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoodsServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-service/src/main/java/com/qf/manager/service/impl/GoodsServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="95" column="18" lean-forward="false" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
-              <folding>
-                <element signature="e#2626#2627#0" expanded="true" />
-                <element signature="e#2662#2663#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="138">
+              <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -268,10 +272,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="110" />
-    <option name="y" value="42" />
-    <option name="width" value="1092" />
-    <option name="height" value="738" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -455,16 +459,6 @@
             <path>
               <item name="layui" type="b2602c69:ProjectViewProjectNode" />
               <item name="layui-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="layui-manager-pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="layui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="layui-manager" type="462c0819:PsiDirectoryNode" />
               <item name="layui-manager-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -615,7 +609,7 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="item" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="layui" type="b2602c69:ProjectViewProjectNode" />
@@ -667,11 +661,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-common/src/main/java/com/qf/common/pojo/dto/PageInfo.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/UserMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/member/add.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/member/edit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/member/list.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -679,14 +668,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-common/src/main/java/com/qf/common/pojo/dto/UserResult.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/UserCustomMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/UserCustomMapper.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-interface/src/main/java/com/qf/manager/service/UserService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-pojo/src/main/java/com/qf/manager/pojo/vo/UserCustom.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-pojo/src/main/java/com/qf/manager/pojo/vo/UserQuery.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-service/src/main/java/com/qf/manager/service/impl/UserServiceImpl.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/java/com/qf/manager/web/ManagerIndexAction.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -772,6 +753,740 @@
         <option name="mySupportsDeletion" value="false" />
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-common/src/main/java/com/qf/common/pojo/dto/PageInfo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/UserMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/member/add.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/member/edit.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/webapp/WEB-INF/jsp/pages/member/list.jsp</PATH>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-common/src/main/java/com/qf/common/pojo/dto/UserResult.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/UserCustomMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-dao/src/main/java/com/qf/manager/dao/UserCustomMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-interface/src/main/java/com/qf/manager/service/UserService.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-pojo/src/main/java/com/qf/manager/pojo/vo/UserCustom.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-pojo/src/main/java/com/qf/manager/pojo/vo/UserQuery.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-service/src/main/java/com/qf/manager/service/impl/UserServiceImpl.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/java/com/qf/manager/web/ManagerIndexAction.java</PATH>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
@@ -896,41 +1611,65 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87267000" />
+    <option name="totallyTimeSpent" value="87348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43856657" sideWeight="0.5173979" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15204236" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931036" sideWeight="0.49418604" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25085324" sideWeight="0.48789713" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43856657" sideWeight="0.48260212" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35517243" sideWeight="0.49612403" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22692889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15204236" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15204236" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21501707" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -981,15 +1720,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <marker date="1541731199515" expanded="true" signature="283:303" ph="SELECT * fro... goods" />
-            <marker date="1541731199515" expanded="true" signature="376:402" ph="SELECT count... goods" />
-            <marker date="1541731199515" expanded="true" signature="502:913" ph="insert into goods... " />
-            <marker date="1541731199515" expanded="true" signature="996:1029" ph="DELETE FROM " />
-            <marker date="1541731199515" expanded="true" signature="1127:1161" ph="SELECT * fro... goods" />
-            <marker date="1541731199515" expanded="true" signature="1312:1511" ph="update goods... " />
-            <marker date="1541731199515" expanded="true" signature="1669:1708" ph="SELECT * fro... where" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -997,9 +1728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1069,7 +1797,6 @@
           <folding>
             <element signature="e#2932#6395#0#JSP" expanded="false" />
             <element signature="e#10351#12284#0#HTML" expanded="false" />
-            <marker date="1541731199655" expanded="false" signature="16975:17043" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -1079,9 +1806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1117,7 +1841,6 @@
           <folding>
             <element signature="e#2932#6395#0#JSP" expanded="false" />
             <element signature="e#10351#12284#0#HTML" expanded="false" />
-            <marker date="1541731199655" expanded="false" signature="16975:17043" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -1260,8 +1983,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/layui-manager/layui-manager-web/src/main/resources/spring/spring-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="31" column="73" lean-forward="true" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
+        <state relative-caret-position="138">
+          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1285,10 +2008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding>
-            <element signature="e#190#191#0" expanded="false" />
-            <element signature="e#381#382#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1327,7 +2046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="129" column="26" lean-forward="false" selection-start-line="129" selection-start-column="26" selection-end-line="129" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1343,11 +2061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1355,7 +2068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1374,9 +2086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1384,15 +2093,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding>
-            <marker date="1541731199515" expanded="true" signature="283:303" ph="SELECT * fro... goods" />
-            <marker date="1541731199515" expanded="true" signature="376:402" ph="SELECT count... goods" />
-            <marker date="1541731199515" expanded="true" signature="502:913" ph="insert into goods... " />
-            <marker date="1541731199515" expanded="true" signature="996:1029" ph="DELETE FROM " />
-            <marker date="1541731199515" expanded="true" signature="1127:1161" ph="SELECT * fro... goods" />
-            <marker date="1541731199515" expanded="true" signature="1312:1511" ph="update goods... " />
-            <marker date="1541731199515" expanded="true" signature="1669:1708" ph="SELECT * fro... where" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1419,7 +2120,6 @@
           <folding>
             <element signature="e#2932#6395#0#JSP" expanded="false" />
             <element signature="e#10351#12284#0#HTML" expanded="false" />
-            <marker date="1541731199655" expanded="false" signature="16975:17043" ph="//..." />
           </folding>
         </state>
       </provider>
