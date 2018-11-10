@@ -1,4 +1,5 @@
 com\qf\manager\service\UsersService.class
 com\qf\manager\service\GoodsService.class
 com\qf\manager\service\UserService.class
+com\qf\manager\service\OrdersService.class
 com\qf\manager\service\ItemService.class

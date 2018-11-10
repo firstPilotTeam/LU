@@ -7,7 +7,6 @@ import com.qf.common.pojo.dto.PageInfo;
 import com.qf.manager.dao.GoodsMapper;
 import com.qf.manager.dao.IGoodsMapper;
 import com.qf.manager.pojo.po.Goods;
-import com.qf.manager.pojo.po.GoodsExample;
 import com.qf.manager.pojo.vo.TbItemQuery;
 import com.qf.manager.service.GoodsService;
 import org.slf4j.Logger;

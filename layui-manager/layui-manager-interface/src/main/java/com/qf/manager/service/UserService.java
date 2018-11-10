@@ -2,7 +2,6 @@ package com.qf.manager.service;
 
 import com.qf.common.pojo.dto.PageInfo;
 import com.qf.common.pojo.dto.UserResult;
-import com.qf.manager.pojo.po.User;
 import com.qf.manager.pojo.vo.UserCustom;
 import com.qf.manager.pojo.vo.UserQuery;
 

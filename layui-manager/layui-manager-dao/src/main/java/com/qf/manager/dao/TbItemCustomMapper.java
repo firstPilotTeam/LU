@@ -1,6 +1,6 @@
 package com.qf.manager.dao;
 
-import com.qf.common.pojo.dto.dto.PageInfo;
+import com.qf.common.pojo.dto.PageInfo;
 import com.qf.manager.pojo.vo.TbItemCustom;
 import org.apache.ibatis.annotations.Param;
 

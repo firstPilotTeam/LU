@@ -3,7 +3,6 @@ com\qf\manager\pojo\po\TbItemCat.class
 com\qf\manager\pojo\po\TbItemCatExample$Criteria.class
 com\qf\manager\pojo\po\SortExample$GeneratedCriteria.class
 com\qf\manager\pojo\po\TbItemExample$Criteria.class
-com\qf\manager\pojo\po\OrdersExample.class
 com\qf\manager\pojo\po\Goods.class
 com\qf\manager\pojo\po\Orders.class
 com\qf\manager\pojo\po\SortExample$Criterion.class
@@ -11,7 +10,6 @@ com\qf\manager\pojo\po\UserExample$GeneratedCriteria.class
 com\qf\manager\pojo\po\GoodsExample$Criterion.class
 com\qf\manager\pojo\po\TbItem.class
 com\qf\manager\pojo\po\GoodsExample.class
-com\qf\manager\pojo\po\OrdersExample$Criteria.class
 com\qf\manager\pojo\po\TbItemExample.class
 com\qf\manager\pojo\po\SortExample$Criteria.class
 com\qf\manager\pojo\po\TbItemCatExample.class
@@ -24,7 +22,6 @@ com\qf\manager\pojo\po\UserExample$Criterion.class
 com\qf\manager\pojo\vo\Users.class
 com\qf\manager\pojo\po\GoodsExample$GeneratedCriteria.class
 com\qf\manager\pojo\vo\TbItemQuery.class
-com\qf\manager\pojo\po\OrdersExample$GeneratedCriteria.class
 com\qf\manager\pojo\po\TbItemDesc.class
 com\qf\manager\pojo\po\GoodsExample$Criteria.class
 com\qf\manager\pojo\po\UserExample.class
@@ -33,7 +30,6 @@ com\qf\manager\pojo\po\UserExample$Criteria.class
 com\qf\manager\pojo\po\TbItemDescExample$Criterion.class
 com\qf\manager\pojo\po\TbItemExample$Criterion.class
 com\qf\manager\pojo\vo\UserCustom.class
-com\qf\manager\pojo\po\OrdersExample$Criterion.class
 com\qf\manager\pojo\po\SortExample.class
 com\qf\manager\pojo\po\TbItemCatExample$GeneratedCriteria.class
 com\qf\manager\pojo\po\TbItemDescExample$Criteria.class

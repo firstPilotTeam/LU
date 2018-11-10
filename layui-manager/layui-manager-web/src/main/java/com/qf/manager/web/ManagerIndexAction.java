@@ -1,17 +1,12 @@
 package com.qf.manager.web;
 
 
-import com.qf.common.pojo.dto.dto.ItemResult;
-import com.qf.common.pojo.dto.dto.PageInfo;
-import com.qf.manager.pojo.vo.TbItemCustom;
 import com.qf.manager.pojo.vo.Users;
 import com.qf.manager.service.ItemService;
 import com.qf.manager.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 /**
  * User: DHC

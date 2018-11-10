@@ -1,46 +1,39 @@
 package com.qf.manager.pojo.po;
 
-import java.util.Date;
+
+import java.sql.Date;
 
 public class Orders {
-    private Integer id;
-
-    private String ordernumber;
-
-    private String gnumber;
-
+    private int id;
+    private int order_number;
+    private int gnumber;
     private String receiver;
+    private String phone;
+    private double total;
+    private double pay;
 
-    private String mod;
-
-    private String total;
-
-    private String pay;
-
-    private Date time;
-
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getOrdernumber() {
-        return ordernumber;
+    public int getOrder_number() {
+        return order_number;
     }
 
-    public void setOrdernumber(String ordernumber) {
-        this.ordernumber = ordernumber == null ? null : ordernumber.trim();
+    public void setOrder_number(int order_number) {
+        this.order_number = order_number;
     }
 
-    public String getGnumber() {
+    public int getGnumber() {
         return gnumber;
     }
 
-    public void setGnumber(String gnumber) {
-        this.gnumber = gnumber == null ? null : gnumber.trim();
+    public void setGnumber(int gnumber) {
+        this.gnumber = gnumber;
     }
 
     public String getReceiver() {
@@ -48,38 +41,31 @@ public class Orders {
     }
 
     public void setReceiver(String receiver) {
-        this.receiver = receiver == null ? null : receiver.trim();
+        this.receiver = receiver;
     }
 
-    public String getMod() {
-        return mod;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setMod(String mod) {
-        this.mod = mod == null ? null : mod.trim();
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public String getTotal() {
+    public double getTotal() {
         return total;
     }
 
-    public void setTotal(String total) {
-        this.total = total == null ? null : total.trim();
+    public void setTotal(double total) {
+        this.total = total;
     }
 
-    public String getPay() {
+    public double getPay() {
         return pay;
     }
 
-    public void setPay(String pay) {
-        this.pay = pay == null ? null : pay.trim();
+    public void setPay(double pay) {
+        this.pay = pay;
     }
 
-    public Date getTime() {
-        return time;
-    }
-
-    public void setTime(Date time) {
-        this.time = time;
-    }
 }

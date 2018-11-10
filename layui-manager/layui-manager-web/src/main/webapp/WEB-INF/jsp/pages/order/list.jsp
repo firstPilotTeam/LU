@@ -28,176 +28,198 @@
     <a class="layui-btn layui-btn-sm" style="line-height:1.6em;margin-top:3px;float:right" href="javascript:location.replace(location.href);" title="刷新">
         <i class="layui-icon" style="line-height:30px">ဂ</i></a>
 </div>
-<div class="weadmin-body">
-    <div class="layui-row">
-        <form class="layui-form layui-col-md12 we-search">
-            <div class="layui-inline">
-                <input class="layui-input" placeholder="开始日" name="start" id="start">
-            </div>
-            <div class="layui-inline">
-                <input class="layui-input" placeholder="截止日" name="end" id="end">
-            </div>
-            <div class="layui-input-inline">
-                <select name="contrller">
-                    <option>支付状态</option>
-                    <option>已支付</option>
-                    <option>未支付</option>
-                </select>
-            </div>
-            <div class="layui-input-inline">
-                <select name="contrller">
-                    <option>支付方式</option>
-                    <option>支付宝</option>
-                    <option>微信</option>
-                    <option>货到付款</option>
-                </select>
-            </div>
-            <div class="layui-input-inline">
-                <select name="contrller">
-                    <option value="">订单状态</option>
-                    <option value="0">待确认</option>
-                    <option value="1">已确认</option>
-                    <option value="2">已收货</option>
-                    <option value="3">已取消</option>
-                    <option value="4">已完成</option>
-                    <option value="5">已作废</option>
-                </select>
-            </div>
-            <div class="layui-inline">
-                <input type="text" name="username" placeholder="请输入订单号" autocomplete="off" class="layui-input">
-            </div>
-            <button class="layui-btn" lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
-        </form>
-    </div>
-    <div class="weadmin-block">
-        <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
-        <button class="layui-btn" onclick="WeAdminShow('添加订单','./add.html')"><i class="layui-icon"></i>添加</button>
-        <span class="fr" style="line-height:40px">共有数据：88 条</span>
-    </div>
-    <table class="layui-table">
-        <thead>
-        <tr>
-            <th>
-                <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
-            </th>
-            <th>订单编号</th>
-            <th>收货人</th>
-            <th>总金额</th>
-            <th>应付金额</th>
-            <th>订单状态</th>
-            <th>支付状态</th>
-            <th>发货状态</th>
-            <th>支付方式</th>
-            <th>配送方式</th>
-            <th>下单时间</th>
-            <th>操作</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>
-                <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
-            </td>
-            <td>2017009171822298053</td>
-            <td>老王:18925139194</td>
-            <td>7829.10</td>
-            <td>7854.10</td>
-            <td>待确认</td>
-            <td>未支付</td>
-            <td>未发货</td>
-            <td>其他方式</td>
-            <td>申通物流</td>
-            <td>2017-08-17 18:22</td>
-            <td class="td-manage">
-                <a title="查看" onclick="WeAdminShow('编辑','order-view.html')" href="javascript:;">
-                    <i class="layui-icon">&#xe63c;</i>
-                </a>
-                <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
-                    <i class="layui-icon">&#xe640;</i>
-                </a>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-    <div class="page">
-        <div>
-            <a class="prev" href="">&lt;&lt;</a>
-            <a class="num" href="">1</a>
-            <span class="current">2</span>
-            <a class="num" href="">3</a>
-            <a class="num" href="">489</a>
-            <a class="next" href="">&gt;&gt;</a>
+    <div class="demoTable">
+        搜索收货人：
+        <div class="layui-inline">
+            <input class="layui-input" placeholder="请输入收货人名字" name="keyword" id="demoReload" autocomplete="off">
         </div>
+        <button class="layui-btn" data-type="reload" id="search1">搜索</button>
     </div>
+
+    <div class="weadmin-block demoTable">
+        <button class="layui-btn layui-btn-danger" data-type="getCheckData"><i class="layui-icon"></i>批量删除</button>
+        <button class="layui-btn" id="add"<%--onclick="WeAdminShow('添加订单','./add.html')"--%>><i class="layui-icon"></i>添加</button>
+        <%--<span class="fr" style="line-height:40px">共有数据：88 条</span>--%>
+    </div>
+
+    <table class="layui-table" id="OrderList" lay-filter="demo"></table>
+
+    <%--表格添加按钮--%>
+    <script type="text/html" id="barDemo"><%--
+        <a class="layui-btn layui-btn-primary layui-btn-mini" lay-event="detail">查看</a>--%>
+        <a class="layui-btn layui-btn-mini" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
+    </script>
+
 
 </div>
 <script>
+    //查找后台数据显示在前端页面，后台返回数据格式{code,msg,count,data}全部封装在ordersResult中直接返回
     layui.extend({
         admin: '{/}../../static/js/admin'
     });
-    layui.use(['laydate','jquery','admin'], function() {
-        var laydate = layui.laydate,
-            $ = layui.jquery,
-            admin = layui.admin;
-        //执行一个laydate实例
-        laydate.render({
-            elem: '#start' //指定元素
+    layui.use(['admin','table','jquery'], function(){
+        var table = layui.table,
+            layer = layui.layer,
+            $ = layui.jquery;
+        //表格渲染
+        table.render({
+            //elem\url\cols表格属性
+            //type\field\title 表头属性
+            //将数据绑定到这个容器上
+            elem: '#OrderList',
+            //发送这个异步请求到后台
+            url:'../../orders',
+            //表头
+            cols:[[
+                {type:'checkbox'},
+                {field: 'order_number', title: '订单编号'},
+                {field: 'gnumber', title: 'g编号'},
+                {field: 'receiver', title: '收货人'},
+                {field: 'phone', title: '号码'},
+                {field: 'total', title: '总金额'},
+                {field: 'pay', title: '应付金额'}
+                ,{field:'right', title: '操作', width:177,toolbar:"#barDemo"}
+            ]],
+            page: true
         });
-        //执行一个laydate实例
-        laydate.render({
-            elem: '#end' //指定元素
+
+
+        /*=============================================批量删除======================================================*/
+        //定义active这个对象
+       var active = {
+           //批量删除方法
+            getCheckData:function(){
+                //获取所有选中行，返回的是一个数组，该数组中封装了每行封装的对象
+                var data = table.checkStatus("OrderList").data;
+
+               // console.log(data.length);
+                if(data.length>0){
+                    //有被选中行
+                    //定义一个空数组用来存放所选中行的ID
+                    var ids = [];
+                    //遍历所有选中行，把ID放入ids中
+                    for(var i = 0;i<data.length;i++){
+                        ids.push(data[i].id);
+                    }
+                    //异步请求
+                    layer.confirm("确认要删除吗，删除后不能恢复哦！", { title: "删除确认" }, function (index) { //确认删除弹窗确认
+                        layer.close(index);
+                        $.post(
+                            url = "../../delete",
+                            data = {"ids": ids},
+                            //执行成功之后的回调函数
+                            function (data) {
+                                if (data > 0) {
+                                    //停留在原来页面刷新
+                                    $('.layui-laypage-btn').click();
+                                    layer.msg("删除成功！", {icon: 1});
+                                }
+
+                            }
+                        )
+                    })
+                }else{
+                    //没有被选中行
+                    layer.msg("请至少选中一行",{icon:5})
+                }
+            },
+           //搜索方法
+           reload: function () {
+               var receiver = $('#demoReload').val();//获取输入框的值
+               //执行重载
+               table.reload('OrderList', //table的id为OrderList
+                   {
+                       page:
+                           {
+                               curr: 1 //重新从第 1 页开始
+                           }
+                       , where: {name: receiver}//这里传参  向后台
+                       , url: "../../select"//后台做模糊搜索接口路径
+                       , method: 'post'
+                   });
+           }
+
+        }
+
+       //批量删除按钮的点击事件（动态生成的按钮不能用点击事件）
+        $('.demoTable .layui-btn-danger').click(function () {
+            //获取按钮的data-type的值getCheckData,按钮data-type的值就是多选框的值
+            var type = $(this).data('type');
+            //在js中存在一个对象叫active//active对象中的type值就是getCheckData的值如果有的话就执行，没有就什么也不做
+            active[type] ? active[type].call(this) :'';
         });
 
-        /*用户-停用*/
-        function member_stop(obj, id) {
-            layer.confirm('确认要停用吗？', function(index) {
-                if($(obj).attr('title') == '启用') {
-                    //发异步把用户状态进行更改
-                    $(obj).attr('title', '停用')
-                    $(obj).find('i').html('&#xe62f;');
+        /*========================================================搜索=================================================================*/
 
-                    $(obj).parents("tr").find(".td-status").find('span').addClass('layui-btn-disabled').html('已停用');
-                    layer.msg('已停用!', {
-                        icon: 5,
-                        time: 1000
-                    });
 
-                } else {
-                    $(obj).attr('title', '启用')
-                    $(obj).find('i').html('&#xe601;');
+//            .demoTable .layui-btn
+       $('#search1').on('click', function(){
+            var type = $(this).data('type');
+            active[type] ? active[type].call(this) : '';
+        })
 
-                    $(obj).parents("tr").find(".td-status").find('span').removeClass('layui-btn-disabled').html('已启用');
-                    layer.msg('已启用!', {
-                        icon: 5,
-                        time: 1000
-                    });
+/*================================================================编辑========================================================*/
+        //监听工具条
+        table.on('tool(demo)', function(obj){ //监听的是table，所以table要有lay-filter="demo"和tool(demo)对应
+            var data = obj.data;
+            if(obj.event === 'edit'){
+              /*  layer.alert('编辑行：<br>'+ JSON.stringify(data))*/
+                layer.open({  //弹出窗口
+                    title:["修改订单","font-size:18px;color:blue;"],
+                    anim: 6,
+                    type: 2,  //窗口样式
+                    area: ['800px', '400px'],  //窗口大小
+                    content: 'edit',            //走的控制层
+                    success: function(layero, index){
+                        var body = layer.getChildFrame('body', index);
+                        var iframeWin = window[layero.find('iframe')[0]['name']]; //得到iframe页的窗口对象，执行iframe页的方法：iframeWin.method();
+                        /*console.log(body.html())*/ //得到iframe页的body内容
+                        body.find('#id').val(data.id);
+                        body.find('#order_number').val(data.order_number);
+                        body.find('#gnumber').val(data.gnumber);
+                        body.find('#reciever').val(data.receiver);
+                        body.find('#mod').val(data.phone);
+                        body.find('#total').val(data.total);
+                        body.find('#pay').val(data.pay);
+                    },
+                    end: function(){
+                        //停留在原来页面刷新
+                        $('.layui-laypage-btn').click();
+                    }
+                });
+            }else if(obj.event === 'del'){ //删除
+                layer.confirm('真的删除该条数据吗？',{ title: "删除确认" }, function(index){
+                   var id = data.id;
+                   $.post(
+                       url="../../deleteOrder",
+                       /*"id="+id,*/
+                        data={"id":id},
+                       function(rec){
+                           $('.layui-laypage-btn').click();
+                           layer.msg("删除成功！", {icon: 1});
+                       }
+                   )
+                });
+            }
+        });
+/*=======================================================添加================================================*/
+        $('#add').on('click',function(){
+            layer.open({  //弹出窗口
+                title:["添加订单","font-size:18px;color:red;"],
+                anim: 6,
+                type: 2,  //窗口样式
+                area: ['800px', '400px'],  //窗口大小
+                content: 'add',            //走的控制层
+                end: function(){
+                    //停留在原来页面刷新
+                    $('.layui-laypage-btn').click();
                 }
             });
-        }
-
-        /*用户-删除*/
-        function member_del(obj, id) {
-            layer.confirm('确认要删除吗？', function(index) {
-                //发异步删除数据
-                $(obj).parents("tr").remove();
-                layer.msg('已删除!', {
-                    icon: 1,
-                    time: 1000
-                });
-            });
-        }
-
-        function delAll(argument) {
-            var data = tableCheck.getData();
-            layer.confirm('确认要删除吗？' + data, function(index) {
-                //捉到所有被选中的，发异步进行删除
-                layer.msg('删除成功', {
-                    icon: 1
-                });
-                $(".layui-form-checked").not('.header').parents('tr').remove();
-            });
-        }
+        })
     });
+
+
 
 </script>
 </body>

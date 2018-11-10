@@ -1,8 +1,8 @@
 package com.qf.manager.service.impl;
 
 
-import com.qf.common.pojo.dto.dto.ItemResult;
-import com.qf.common.pojo.dto.dto.PageInfo;
+import com.qf.common.pojo.dto.ItemResult;
+import com.qf.common.pojo.dto.PageInfo;
 import com.qf.manager.dao.TbItemCustomMapper;
 import com.qf.manager.dao.TbItemMapper;
 import com.qf.manager.pojo.po.TbItem;
