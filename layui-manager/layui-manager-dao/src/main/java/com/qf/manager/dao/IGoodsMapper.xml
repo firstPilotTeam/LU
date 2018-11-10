@@ -37,9 +37,9 @@
 
     <!--编辑-->
     <select id="update" resultType="com.qf.manager.pojo.po.Goods" parameterType="com.qf.manager.pojo.po.Goods">
-        update goods set id=#{id}, goodsnumber=#{goodsnumber}, gname=#{gname},
+        update goods set goodsnumber=#{goodsnumber}, gname=#{gname},
         features=#{features}, Shelftime=#{Shelftime}, snumber=#{snumber},
-        stock=#{stock}, state=#{state}, ishot=#{ishot}
+        stock=#{stock}, state=#{state}, ishot=#{ishot} WHERE id=#{id}
           
     </select>
 

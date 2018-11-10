@@ -17,7 +17,7 @@ public class ManagerAction {
     private GoodsService ser;
 
     @GetMapping("/{path}")
-    public String  Index1(@PathVariable String path){
+    public String  Index(@PathVariable String path){
         return path;
     }
 
@@ -25,24 +25,23 @@ public class ManagerAction {
     public String Index2(@PathVariable String path){
 
         return "pages/"+path;
-    }
+   }
 
     @GetMapping("/pages/{path1}/{path2}")
     public String Index3(@PathVariable String path1, @PathVariable String path2){
-        return "pages/"+path1+"/"+path2;
-    }
+       return "pages/"+path1+"/"+path2;
+   }
 
     @RequestMapping(value="/items")
     @ResponseBody
-    public GoodsResult<Goods> index4(PageInfo pageInfo , TbItemQuery query){
+   public GoodsResult<Goods> index4(PageInfo pageInfo , TbItemQuery query){
        // System.out.println(pageInfo);
-        return ser.findAll(pageInfo,query);
-    }
+       return ser.findAll(pageInfo,query);
+   }
 
     @ResponseBody
     @PostMapping("/items/batch")
-    public int batchItems(@RequestParam("ids[]") List<Long> ids){
-        return ser.batchGoods(ids);
+    public int batchItems(@RequestParam("ids[]") List<Long> ids){ return ser.batchGoods(ids);
 
     }
 

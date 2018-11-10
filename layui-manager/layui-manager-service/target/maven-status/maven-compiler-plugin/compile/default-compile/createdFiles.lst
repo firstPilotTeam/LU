@@ -1,1 +1,4 @@
+com\qf\manager\service\impl\UsersServiceImpl.class
+com\qf\manager\service\impl\UserServiceImpl.class
 com\qf\manager\service\impl\ItemServiceImpl.class
+com\qf\manager\service\impl\GoodsServiceImpl.class

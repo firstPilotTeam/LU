@@ -26,32 +26,32 @@ public class ManagerIndexAction {
 
     @Autowired
     private UsersService usersService;
-    @GetMapping("/{path}")
-    public String index1(@PathVariable String path) {
-        return path;
-    }
+//    @GetMapping("/{path}")
+//    public String index1(@PathVariable String path) {
+//        return path;
+//    }
+//
+//    @GetMapping("/pages/{path}")
+//    public String index2(@PathVariable String path) {
+//        return "pages/" + path;
+//    }
+//
+//    @GetMapping("/pages/{path1}/{path2}")
+//    public String index3(@PathVariable String path1, @PathVariable String path2) {
+//        return "pages/" + path1 + "/" + path2;
+//    }
 
-    @GetMapping("/pages/{path}")
-    public String index2(@PathVariable String path) {
-        return "pages/" + path;
-    }
-
-    @GetMapping("/pages/{path1}/{path2}")
-    public String index3(@PathVariable String path1, @PathVariable String path2) {
-        return "pages/" + path1 + "/" + path2;
-    }
-
-    @ResponseBody
-    @GetMapping("/items")
-    public ItemResult<TbItemCustom> listItemsByPage(PageInfo pageInfo){
-        return itemService.listItemsByPage(pageInfo);
-    }
-
-    @ResponseBody
-    @PostMapping("/items/batch")
-    public int batchItems(@RequestParam("ids[]") List<Long> ids){
-        return itemService.batchItems(ids);
-    }
+//    @ResponseBody
+//    @GetMapping("/items")
+//    public ItemResult<TbItemCustom> listItemsByPage(PageInfo pageInfo){
+//        return itemService.listItemsByPage(pageInfo);
+//    }
+//
+//    @ResponseBody
+//    @PostMapping("/items/batch")
+//    public int batchItems(@RequestParam("ids[]") List<Long> ids){
+//        return itemService.batchItems(ids);
+//    }
 
     //登入验证
     @ResponseBody
