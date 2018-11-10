@@ -47,7 +47,7 @@ public class UserServiceImpl implements UserService {
     public int batchUsers(List<Integer> ids) {
         int i = 0;
         try {
-            //封装一个携带状态的商品对象
+            //封装一个携带状态的用户对象
             User record = new User();
             record.setStatus("3");
             //创建模板

@@ -18,14 +18,14 @@
 
     <select id="countUsers" resultType="_long">
         select count(1)
-        from user u LEFT JOIN orders o ON u.onumber=o.ordernumber LEFT JOIN goods g ON o.gnumber=g.goodsnumber
+        from user u LEFT JOIN orders o ON u.onumber=o.order_number LEFT JOIN goods g ON o.gnumber=g.goodsnumber
         <include refid="Where_Clause" />
     </select>
 
     <select id="listUsersByPageAndSearch" resultType="com.qf.manager.pojo.vo.UserCustom">
         select
         <include refid="Base_Column_List" />
-        from user u LEFT JOIN orders o ON u.onumber=o.ordernumber LEFT JOIN goods g ON o.gnumber=g.goodsnumber
+        from user u LEFT JOIN orders o ON u.onumber=o.order_number LEFT JOIN goods g ON o.gnumber=g.goodsnumber
         <include refid="Where_Clause" />
         limit #{pageInfo.offset},#{pageInfo.limit}
     </select>
