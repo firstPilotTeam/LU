@@ -57,7 +57,7 @@
         </form>
     </div>
     <div class="weadmin-block demoTable">
-       <%-- <button class="layui-btn layui-btn-danger" data-type="getCheckData"><i class="layui-icon">&#xe640;</i>批量删除</button>--%>
+       <button class="layui-btn layui-btn-danger" data-type="getCheckData"><i class="layui-icon">&#xe640;</i>批量删除</button>
         <%--<button class="layui-btn" onclick="WeAdminShow('添加商品','./add',600,500)"><i class="layui-icon">&#xe61f;</i>添加</button>--%>
         <button id="addBtn" class="layui-btn" data-type="reload">新增</button>
     </div>
@@ -216,13 +216,32 @@
                             }
 
                     }},
-                    {field: 'snumber', title: '分类编号',width:80},
+                    {field: 'cname', title: '分类编号',width:80},
                     {field: 'stock', title: '库存',width:80},
                     {field: 'state', title: '商品状态',width:80},
                     {field: 'ishot', title: '是否热销',width:80},
                     {field: 'right', title: '操作',toolbar:"#barDemo",width:180}
                 ]],
-                page: true
+                page: true,
+
+                //分页的前代码
+                done: function (res, curr, count) {
+//                    console.log($("[data-field='status']").children());
+//                    console.log(res);
+//                    console.log(curr);
+//                    console.log(count);
+                    $("[data-field='status']").children().each(function (i) {
+                        //text() html() val()
+                        if ($(this).text() == '1') {
+                            $(this).text('正常');
+                        } else if ($(this).text() == '2') {
+                            $(this).text('下架');
+                        } else if ($(this).text() == '3') {
+                            $(this).text('删除');
+                        }
+                    });
+                }
+
             });
 
 
@@ -280,11 +299,12 @@
                             //page
                             page: {curr:1},
                             //where
-                            where:{title:title}
+                            where:{gname:title}
                         });
                     }
                 }
             };
+            //var active1={};
 
             //批量删除按钮的点击事件
             $('.demoTable .layui-btn-danger').on('click',function () {

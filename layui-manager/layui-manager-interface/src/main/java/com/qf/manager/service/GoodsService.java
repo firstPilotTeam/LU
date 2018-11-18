@@ -3,22 +3,24 @@ package com.qf.manager.service;
 import com.qf.common.pojo.dto.GoodsResult;
 import com.qf.common.pojo.dto.PageInfo;
 import com.qf.manager.pojo.po.Goods;
+import com.qf.manager.pojo.vo.GoodsCustom;
+import com.qf.manager.pojo.vo.GoodsQuery;
 import com.qf.manager.pojo.vo.TbItemQuery;
 
 import java.util.List;
 
 public interface GoodsService {
 
-    GoodsResult<Goods> findAll(PageInfo pageInfo, TbItemQuery query);
+    GoodsResult<GoodsCustom> findAll(PageInfo pageInfo, GoodsQuery query);
 
-    int batchGoods(List<Long> ids);
+    int batchGoods(List<Integer> ids);
 
-    void addGoods(Goods goods);
+    void addGoods(GoodsCustom goods);
 
 
     void delGoods(Integer id);
 
-    List<Goods> editback(Integer id);
+    List<GoodsCustom> editback(Integer id);
 
-    void modifyGoods(Goods goods);
+    void modifyGoods(GoodsCustom goods);
 }

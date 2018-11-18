@@ -3,6 +3,8 @@ package com.qf.manager.web;
 import com.qf.common.pojo.dto.GoodsResult;
 import com.qf.common.pojo.dto.PageInfo;
 import com.qf.manager.pojo.po.Goods;
+import com.qf.manager.pojo.vo.GoodsCustom;
+import com.qf.manager.pojo.vo.GoodsQuery;
 import com.qf.manager.pojo.vo.TbItemQuery;
 import com.qf.manager.service.GoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,16 +34,19 @@ public class ManagerAction {
        return "pages/"+path1+"/"+path2;
    }
 
+   //包括分页
     @RequestMapping(value="/items")
     @ResponseBody
-   public GoodsResult<Goods> index4(PageInfo pageInfo , TbItemQuery query){
-       // System.out.println(pageInfo);
+    //虽然此方法返回的是一个对象，但是使用@ResponseBody将会返回给前端一个json字符串格式
+   public GoodsResult<GoodsCustom> index4(PageInfo pageInfo,GoodsQuery query){
+       System.out.println("++++++++++"+query.getGname());
        return ser.findAll(pageInfo,query);
    }
 
     @ResponseBody
     @PostMapping("/items/batch")
-    public int batchItems(@RequestParam("ids[]") List<Long> ids){ return ser.batchGoods(ids);
+    public int batchItems(@RequestParam("ids[]") List<Integer> ids){
+       return ser.batchGoods(ids);
 
     }
 
@@ -54,8 +59,8 @@ public class ManagerAction {
 
     @RequestMapping(value="/add",method=RequestMethod.POST)
     @ResponseBody
-    public GoodsResult<Goods> addPost(Goods goods){
-        GoodsResult<Goods> result = new GoodsResult<>();
+    public GoodsResult<GoodsCustom> addPost(GoodsCustom goods){
+        GoodsResult<GoodsCustom> result = new GoodsResult<>();
         result.setMsg("添加成功");
         ser.addGoods(goods);
 
@@ -98,12 +103,14 @@ public class ManagerAction {
     //提交编辑之后的数据
     @RequestMapping(value="/edit3" ,method=RequestMethod.POST)
     @ResponseBody
-    public GoodsResult<Goods> edit(Goods goods){
-        GoodsResult<Goods> result = new GoodsResult<Goods>();
+    public GoodsResult<GoodsCustom> edit(GoodsCustom goods){
+        GoodsResult<GoodsCustom> result = new GoodsResult<GoodsCustom>();
         result.setMsg("编辑成功");
         result.setCode(0);
         ser.modifyGoods(goods);
         //ser.edit();
         return result;
     }
+
+
 }

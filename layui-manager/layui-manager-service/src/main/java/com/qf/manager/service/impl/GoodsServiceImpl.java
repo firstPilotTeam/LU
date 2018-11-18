@@ -7,7 +7,9 @@ import com.qf.common.pojo.dto.PageInfo;
 import com.qf.manager.dao.GoodsMapper;
 import com.qf.manager.dao.IGoodsMapper;
 import com.qf.manager.pojo.po.Goods;
-import com.qf.manager.pojo.vo.TbItemQuery;
+import com.qf.manager.pojo.po.GoodsExample;
+import com.qf.manager.pojo.vo.GoodsCustom;
+import com.qf.manager.pojo.vo.GoodsQuery;
 import com.qf.manager.service.GoodsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,19 +30,20 @@ public class GoodsServiceImpl implements GoodsService {
     private IGoodsMapper mapper;
 
     @Override
-    public GoodsResult<Goods> findAll(PageInfo pageInfo, TbItemQuery query) {
+    public GoodsResult<GoodsCustom> findAll(PageInfo pageInfo, GoodsQuery query) {
 
 
 
-        GoodsResult<Goods> result = new GoodsResult<>();
+        GoodsResult<GoodsCustom> result = new GoodsResult<GoodsCustom>();
         //查询成功时
         result.setCode(0);
         result.setMsg("success");
-        System.out.println(pageInfo.getLimit());
+        //System.out.println(pageInfo.getLimit());
+        System.out.println("--------------"+query.getGname());
         try {
             Long count = mapper.countGoods(query);
             result.setCount(count);
-            List<Goods> all = mapper.selectAll(pageInfo,query);
+            List<GoodsCustom> all = mapper.selectAll(pageInfo,query);
             result.setData(all);
         }catch (Exception e){
             e.printStackTrace();
@@ -55,12 +58,12 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public int batchGoods(List<Long> ids) {
-       /* int i = 0;
+    public int batchGoods(List<Integer> ids) {
+       int i = 0;
         try {
-            //封装一个携带状态的商品对象
+            //封装一个携带状态 的商品对象
             Goods record = new Goods();
-            record.setState((byte)3);
+            record.setState("3");
             //创建模板
             GoodsExample example = new GoodsExample();
             GoodsExample.Criteria criteria = example.createCriteria();
@@ -70,12 +73,12 @@ public class GoodsServiceImpl implements GoodsService {
         } catch (Exception e) {
             //查询发生异常时将进行日志输出(输出到控制台还是到日志文件,由logback.xml决定)
             logger.error(e.getMessage(), e);
-        }*/
-        return 0;
+        }
+        return i;
     }
 
     @Override
-    public void addGoods(Goods goods) {
+    public void addGoods(GoodsCustom goods) {
         mapper.saveGoods(goods);
     }
 
@@ -85,13 +88,13 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public List<Goods> editback(Integer id) {
-        List<Goods> goods = mapper.modifyback(id);
+    public List<GoodsCustom> editback(Integer id) {
+        List<GoodsCustom> goods = mapper.modifyback(id);
         return goods;
     }
 
     @Override
-    public void modifyGoods(Goods goods) {
+    public void modifyGoods(GoodsCustom goods) {
         mapper.update(goods);
     }
 }
