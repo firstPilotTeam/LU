@@ -40,6 +40,7 @@ public class ManagerAction {
     //虽然此方法返回的是一个对象，但是使用@ResponseBody将会返回给前端一个json字符串格式
    public GoodsResult<GoodsCustom> index4(PageInfo pageInfo,GoodsQuery query){
        System.out.println("++++++++++"+query.getGname());
+        System.out.println("++++++++++"+pageInfo.getLimit());
        return ser.findAll(pageInfo,query);
    }
 

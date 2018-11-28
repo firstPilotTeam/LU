@@ -64,6 +64,7 @@
 
     <sql id="Where_Clause">
         <where>
+
             <if test="query!=null and query.gname !=null and query.gname !=''">
                   and i.gname LIKE '%${query.gname}%'
             </if>
